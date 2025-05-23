@@ -16,6 +16,7 @@ public class BuildingUI extends JLayeredPane {
         floors = new FloorUI[GlobalParams.TOTAL_FLOORS];
         for (int i = 0; i < GlobalParams.TOTAL_FLOORS; i++) {
             floors[i] = new FloorUI(i);
+            floors[i].add(new StickPersonUI(i),JLayeredPane.PALETTE_LAYER);
             add(floors[i],JLayeredPane.DEFAULT_LAYER);
         }
     }
