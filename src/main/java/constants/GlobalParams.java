@@ -17,11 +17,13 @@ public class GlobalParams {
     public static final int FLOOR_HEIGHT = 150;
 
     public static final int PERSON_HEIGHT = 60;
+    public static boolean IS_ELEVATOR_MOVING = false;
+    public static int ELEVATOR_TARGET_FLOOR = -1;
     public GlobalParams(){
         Toolkit toolkit = Toolkit.getDefaultToolkit();
         Dimension dimension = toolkit.getScreenSize();
 
         WINDOW_WIDTH=dimension.width;
-        WINDOW_HEIGHT=dimension.height-100;
+        WINDOW_HEIGHT=dimension.height;
     }
 }

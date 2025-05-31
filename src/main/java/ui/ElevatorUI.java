@@ -8,7 +8,7 @@ import java.awt.*;
 import static constants.GlobalParams.*;
 
 public class ElevatorUI extends JPanel {
-    private final int X = FLOOR_WIDTH-ELEVATOR_WIDTH-5,Y=TOTAL_FLOORS*FLOOR_HEIGHT-ELEVATOR_HEIGHT-1;
+    private final int X = FLOOR_WIDTH -ELEVATOR_WIDTH-5,Y=TOTAL_FLOORS*FLOOR_HEIGHT-ELEVATOR_HEIGHT-1;
     public ElevatorUI() {
         setOpaque(true);
         setBackground(new Color(120, 120, 255));
